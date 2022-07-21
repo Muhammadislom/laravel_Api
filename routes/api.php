@@ -19,7 +19,8 @@ use Illuminate\Support\Facades\Route;
 //});
 Route::apiResources([
     'role' => 'RoleController',
-    'user' => 'UserController'
+    'user' => 'UserController',
+    'category' => 'CategoryController'
 ]);
 //Route::group(function () {
 //    Route::apiResources([
