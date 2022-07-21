@@ -20,7 +20,8 @@ use Illuminate\Support\Facades\Route;
 Route::apiResources([
     'role' => 'RoleController',
     'user' => 'UserController',
-    'category' => 'CategoryController'
+    'category' => 'CategoryController',
+    'product' => 'ProductController'
 ]);
 //Route::group(function () {
 //    Route::apiResources([
