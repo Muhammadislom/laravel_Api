@@ -8,6 +8,7 @@ use App\Http\Requests\api\UserUpdateRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -19,8 +20,9 @@ class UserController extends Controller
 
     public function store(UserStoreRequest $user)
     {
-        $user = User::create($user->validated());
-        return new UserResource($user);
+        $user = $user->validated();
+        $user['password'] = Hash::make($user['password']);
+        return new UserResource(User::create($user));
     }
 
     public function show($id)
