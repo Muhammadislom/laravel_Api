@@ -8,5 +8,6 @@
 2): cd testProjectLaravel and npm install<br />
 3): composer install <br />
 4): copy .env.example .env <br />
-5): php artisan key:generate <br />
-6): php artisan serve
+5): add db user and password in .env file <br />
+6): php artisan key:generate <br />
+7): php artisan serve
