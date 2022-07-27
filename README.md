@@ -2,7 +2,6 @@
 
 
 
-# Тестовая задача.
 1): git clone https://github.com/Muhammadislom/laravel_api.loc.git <br/>
 2): cd FolderName<br />
 3): composer install <br />
